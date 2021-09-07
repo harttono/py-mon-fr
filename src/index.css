@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  padding: 1.2rem 0;
+  background-color: cadetblue;
+}
+:root{
+  --mainColor:#49D0B0
+}
+.underline {
+  padding: 8px 0;
+  position: relative;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.underline::after {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #121212;
+  left: 0;
+  bottom: -0.4px;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 576px) {
+  .f_column {
+    flex-wrap: wrap !important;
+  }
+  .f_column > div > img {
+    margin:auto;
+  }
+}
+
+/* listItem */
+
+.itemBg{
+  background-color:var(--mainColor);
+  min-width:15rem;
+  border-radius:25px;
+  color:#fefefe;
+}
+
+.itemBg .types{
+  padding:4px 12px;
+  background-color:#64E3CA;
+  border-radius:10px;
+}
+
+.img-container > img{
+  object-fit:cover;
+  display:block;
+  width:8rem;
+  height:10rem;
+  height:100%;
+}
+
+/* detail */
+.detail{
+  background-color:var(--mainColor);
+  color:#fefefe;
+}
+.detail i{
+  font-size:30px;
+  cursor: pointer;
+}
+.detail .detail-name span{
+  padding:4px 12px;
+  background-color:#64E3CA;
+  border-radius:10px;
+}
+.detail .img-detail{
+  text-align:center;
+}
+.detail .img-detail img{
+  min-width:250px;
+  min-height:250px;
+  object-fit:fill;
+}
+.detail span{
+  margin:0 5px;
+}
+.detail-content{
+  border-top-left-radius:25px;
+  border-top-right-radius:25px;
+}
+.detail-content .list{
+  border-bottom:.5px solid rgba(0,0,0,.2) !important;
+}
+
+.detail-content button{
+  padding:10px 15px 15px;
+  outline:none;
+  border:none;
+  background:transparent;
+  position: relative;
+}
+
+.detail-content  button::after{
+  content:"";
+  position:absolute;
+
+  bottom:0;
+  left:0;
+  width:100%;
+}
